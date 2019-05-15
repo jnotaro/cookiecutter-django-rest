@@ -1,18 +1,7 @@
 <p align="center">
   <img width="64" src="media/cdr-icon.png" alt="cookiecutter-django-rest">
   <h3 align="center">cookiecutter-django-rest</h3>
-  <p align="center">a factory for building bleeding edge, best practiced, scalable, rest apis</p>
-  <p align="center">
-    <a href="https://travis-ci.org/agconti/cookiecutter-django-rest">
-      <img src="https://travis-ci.org/agconti/cookiecutter-django-rest.svg?branch=master" alt="Build Status">
-    </a>
-    <a href="https://pyup.io/repos/github/agconti/cookiecutter-django-rest/">
-      <img src="https://pyup.io/repos/github/agconti/cookiecutter-django-rest/shield.svg" alt="Dependencies">
-    </a>
-    <a href="https://pyup.io/repos/github/agconti/cookiecutter-django-rest/">
-      <img src="https://pyup.io/repos/github/agconti/cookiecutter-django-rest/python-3-shield.svg" alt="Python 3">
-    </a>
-  </p>
+  <p align="center">Jeff Notaro version of a factory for building bleeding edge, best practiced, scalable, rest apis</p>
 </p>
 
 You need to make a scalable api on a deadline. You deeply care about the quality of your work.
