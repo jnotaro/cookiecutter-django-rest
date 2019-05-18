@@ -16,7 +16,8 @@ class UserViewSet(mixins.RetrieveModelMixin,
     permission_classes = (IsUserOrReadOnly,)
 
 
-class UserCreateViewSet(mixins.CreateModelMixin,
+class UserCreateViewSet(mixins.ListModelMixin,
+                        mixins.CreateModelMixin,
                         viewsets.GenericViewSet):
     """
     Creates user accounts
@@ -24,3 +25,9 @@ class UserCreateViewSet(mixins.CreateModelMixin,
     queryset = User.objects.all()
     serializer_class = CreateUserSerializer
     permission_classes = (AllowAny,)
+
+    def get(self, request, *args, **kwargs):
+        return self.list(request,*args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
